@@ -1,0 +1,80 @@
+/* -------------------------------------------------------------------
+// markItUp!
+// By Jay Salvat - http://markitup.jaysalvat.com/
+//
+// CSS Set by Kevin Papst - http://www.kevinpapst.de/
+// ------------------------------------------------------------------*/
+
+.markItUp .extra a {
+	background-image:url(images/extra_down.png);}
+
+.markItUp .h1 a {
+	background-image:url(images/h1.png);
+}
+.markItUp .h2 a {
+	background-image:url(images/h2.png);
+}	
+.markItUp .h3 a {
+	background-image:url(images/h3.png);
+}	
+.markItUp .h4 a {
+	background-image:url(images/h4.png);
+}
+.markItUp .bold a {
+	background-image:url(images/bold.png);
+}	
+.markItUp .italic a {
+	background-image:url(images/italic.png);
+}
+.markItUp .stroke a {
+	background-image:url(images/stroke.png);
+}
+.markItUp .list-bullet a {
+	background-image:url(images/list-bullet.png);
+}	
+.markItUp .list-numeric a {
+	background-image:url(images/list-numeric.png);
+}
+.markItUp .image a {
+	background-image:url(images/picture.png);
+}	
+.markItUp .link a {
+	background-image:url(images/link.png);
+}
+
+
+.markItUp .blockquote a	{
+	background-image:url(images/extra_blockquote.png);}
+	
+.markItUp .quote a	{
+	background-image:url(images/extra_quote.png);}
+
+.markItUp .cite a {
+	background-image:url(images/extra_cite.png);}
+
+
+
+.markItUp .blockcode a	{
+	background-image:url(images/page_white_code.png);}
+	
+.markItUp .code a	{
+	background-image:url(images/extra_code.png);}
+	
+.markItUp .off a	{
+	background-image:url(images/disconnect.png);}
+
+
+.markItUp .more a {
+	background-image:url(images/extra_separator4.png);} 
+	
+.markItUp .hr a {
+	background-image:url(images/extra_separator5.png);} 
+	
+.markItUp .help a {
+	background-image:url(images/help.png);} 
+
+	
+.markItUp .font a {
+	background-image:url(images/font.png);}	
+	
+	

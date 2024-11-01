@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Texy Quick Help</title>
+<style type="text/css">
+* {
+ 	margin:0;
+	padding:0;
+	font-size:100%;}
+
+body {
+	font-size:62.5%;
+	background:#fff;
+	font-family:"Segoe UI", Tahoma, sans-serif;}
+
+#nav {
+	position:fixed;
+	width:200px; padding-left:20px; /*max-height:300px; overflow-y:scroll;*/}
+
+#content {
+	margin-left:230px;
+	min-width:250px; max-width:700px; padding:0 20px; /*max-height:300px; overflow-y:scroll;*/}
+
+
+/* =general typo
+------------------------------------------------*/
+
+h1, h2, h3, h4 {
+	clear:both;
+	text-transform:uppercase; font-weight:normal; color:#666;}
+
+h2 {
+	margin-top:10px;
+	padding:20px 0 10px 0;
+	border-top:1px solid #ddd;
+	font-size:180%;}
+
+h3 {
+	padding:10px 0;
+	font-size:140%;}
+
+ol, ul, p, dl, pre {
+	font-size:130%; line-height:1.5; color:#333;}
+
+ol {
+	margin:0 0 1em 2em;}
+	
+ul {
+	margin:0 0 1em 2em;}
+	
+p {
+	margin-bottom:0.66em;}
+
+a {
+	color:inherit;}
+
+a:hover {
+	background-color:#EAF2FA;
+	text-decoration:none;}
+
+
+/* =specific
+------------------------------------------------*/
+
+
+#content > p {
+	clear:both;}
+	
+#content > .out {
+	clear:none;}
+
+h1 {
+	padding:20px 0;
+	font-size:240%; }
+
+	h1 a {
+		color:#666;}
+
+
+#nav .note {
+	margin-top:3em;}
+	
+	#nav .note p {
+		color:#888;
+		font-size:110%;}
+
+	#nav .note:hover p {
+		color:#333;}
+
+
+.in, .out {
+	width:45%; padding:3px;
+	float:left;}
+
+.in {
+	clear:left; margin-right:10px;
+	padding-right:10px;
+	border-right:1px solid #ddd;
+	background-color:#EAF2FA;
+	font-family:monospace;}
+
+	.in strong {
+		font-weight:normal; color:#000; background-color:#ddeaf7;}
+
+	.in:hover strong {
+		background-color:#fff;}	
+
+code {
+	padding:1px 2px;  
+	background-color:#EAF2FA;}
+
+	.out code {
+		background-color:transparent;}
+
+
+.php-keyword1 {color:#d24; font-weight:bold;}
+.php-keyword2 {color:#d24; }
+.php-var {color:#e90; font-weight:bold;}
+.php-num {color:red;}
+.php-quote {color:#843; font-weight:bold;}
+.php-vquote {color:#fa0;}
+.php-comment {color:#999; background-color:#ffe;}
+
+#epilogue {
+	padding:2em 0;
+	border-top:1px solid #ddd;}
+
+</style>
+
+<!--[if lte IE 7]>
+<style type="text/css">
+
+#nav {
+	position:absolute; left:0;}
+
+a {color:#666;}
+</style>
+<![endif]-->
+
+<!--[if lte IE 6]>
+<style type="text/css">
+
+p {clear:both;}
+p.out {clear:none;}
+</style>
+<![endif]-->
+</head>
+
+<body>
+<div id="all">
+
+	<div id="nav">
+
+		<h1><a href="http://texy.info">Texy</a> Quick Help</h1>
+	
+		<h2>Table of contents</h2>
+		
+		<ol>
+			<li><a href="#basics">Basics</a></li>
+			<li><a href="#links">Links</a></li>
+			<li><a href="#images">Images</a></li>
+			<li><a href="#headings">Headings</a></li>
+			<li><a href="#lists">Lists</a></li>
+			<li><a href="#quoting">Quoting</a></li>
+			<li><a href="#source-codes">Source codes</a></li>
+			<li><a href="#extras">Extras</a></li>
+		</ol>
+		
+		<div class="note">
+		<p>Please note that this is only <em>the quick help</em>. 
+		Texy provides much more options than is mentioned in this document.</p>
+		<p>More informatin you can get at the <a href="http://texy.info/en/syntax">official syntax manual</a>.</p>
+		</div>
+		
+	</div><!-- /nav -->
+	
+	<div id="content">
+	
+	<h3>How to read this help</h3>
+	<p class="in"><code>This is how the  input looks like. This is <strong>*</strong>what you type<strong>*</strong>.</code></p>
+	<p class="out">And this is the result. How it will (probably) look like at the output. </p>	
+	
+	
+	
+	<h2 id="basics">Basics</h2>
+	
+	<h3>New paragraph</h3>
+	<p>Just 2x Enter.</p>
+	
+	<h3>Emphasized text</h3>
+	<p class="in"><code>The steak was <strong>*</strong>very<strong>*</strong> rare.</code></p>
+	<p class="out">The steak was <em>very</em> rare.</p>
+	
+	<h3>Strongly emphasized text</h3>
+	<p class="in"><code>We recommend <strong>**</strong>not to drink and drive<strong>**</strong>.</code></p>
+	<p class="out">We recommend <strong>not to drink and drive</strong>.</p>
+	
+
+
+
+	<h2 id="links">Links</h2>
+	<h3>Simplest link</h3>
+	<p class="in">See <strong>"</strong>our website<strong>":</strong>http://example.com</p>
+	<p class="out">See <a href="http://example.com">our website</a></p>
+
+
+
+
+
+	<h2 id="images">Images</h2>
+	
+	<p class="in"><strong>[* </strong>picture.jpg<strong> *]</strong></p>
+	<p class="out">[Image as simple as possible]</p>
+
+	<p class="in"><strong>[* </strong>http://example.com/here/pic.jpg<strong> *]</strong></p>
+	<p class="out">[Image as simple as possible (full address)]</p>
+		
+	<h3>Aligned images</h3>
+	<p class="in"><strong>[* </strong>animals/picture.jpg<strong> &gt;]</strong></p>
+	<p class="out">[Image aligned to right]</p>
+		
+	<p class="in"><strong>[* </strong>trees/picture.jpg<strong> &lt;]</strong></p>
+	<p class="out">[Image aligned to left]</p>
+
+	<p class="in"><strong>[* </strong>trees/picture.jpg<strong> *] .&lt;&gt;</strong></p>
+	<p class="out">[Image aligned to center]</p>
+	
+	<h3>Linking images</h3>
+	<p class="in"><strong>[* </strong>animals/picture.jpg<strong> *]:</strong>http://example.com</p>
+	<p class="out">[Image as a link to example site]</p>
+	
+	<p class="in"><strong>[* </strong>animals/t_picture.jpg<strong> &lt;]:[* </strong>animals/picture.jpg<strong> *]</strong></p>
+	<p class="out">[Aligned image as a link to other image]</p>	
+	
+	<h3>Images with description</h3>
+	<p class="in"><strong>[* </strong>photos/me.jpg<strong> &gt;] *** </strong>Me somewhere in Yucatan</p>
+	<p class="out">[Image aligned to right with description]</p>	
+	
+	
+	<h3>Image as complicated as possible</h3>
+	<p class="in"><strong>[* </strong>photos/small_me.jpg<strong> .(</strong>alternative text<strong>) &gt;]:[* </strong>photos/big_me.jpg<strong> *] *** </strong>Me somewhere</p>
+	<p class="out">[Image aligned to right, linking to other image, with description and alternative text]</p>		
+	
+	
+	
+	
+	
+	<h2 id="headings">Headings</h2>
+	<p>There are four basic levels of headings: <code>#</code> <code>*</code> <code>=</code> <code>-</code></p>
+	<p><em>Note:</em> If you don't need all four levels, you're free to start with any level. The highest used will be recognized as the top level automatically.</p>
+	<p><em>Note:</em> Actual look or size of each level depends on your site settings.</p>
+	
+	<p class="in">Top level heading<strong><br />##################</strong></p>
+	
+	<p class="in">Second level<strong><br />*******************</strong></p>
+	
+	<p class="in">Third level<strong><br />=================</strong></p>
+	
+	<p class="in">Fourth level<strong><br />----------------</strong></p>
+	
+	
+	
+	
+	<h2 id="lists">Lists</h2>
+	
+	<h3>Bulleted list</h3>
+	<p class="in">
+		<strong>- </strong>yellow
+		<br /><strong>- </strong>green
+		<br /><strong>- </strong>blue
+		<br /><strong>- </strong>pink one</p>
+		
+	<div class="out">
+		<ul>
+			<li>yellow</li>
+			<li>green</li>
+			<li>blue</li>
+			<li>pink one</li>
+		</ul>
+	</div>
+	
+	
+	<h3>Numbered list</h3>
+	
+	<p class="in">
+		<strong>1. </strong>yellow
+		<br /><strong>2. </strong>green
+		<br /><strong>3. </strong>blue
+		<br /><strong>4. </strong>pink one</p>
+		
+	<div class="out">
+		<ol>
+			<li>yellow</li>
+			<li>green</li>
+			<li>blue</li>
+			<li>pink one</li>
+		</ol>
+	</div>
+
+
+
+
+	<h2 id="quoting">Quoting</h2>
+	
+	<h3>Multi-line quotation</h3>
+	<p class="in"><strong>&gt; </strong>VLADIMIR: Ah yes, the two thieves. Do you remember the story? 
+<br /><strong>&gt; </strong>
+<br /><strong>&gt; </strong>ESTRAGON: No.
+<br /><strong>&gt; </strong>
+<br /><strong>&gt; </strong>VLADIMIR: Shall I tell it to you?</p>
+	
+	<div class="out"><blockquote>
+<p>VLADIMIR: Ah yes, the two thieves. Do you remember the story?</p> 
+<p>ESTRAGON: No. </p>
+<p>VLADIMIR: Shall I tell it to you?</p>
+</blockquote></div>
+
+	<p><em>Note:</em> How this quotation will look on your site depends on its settings.</p>
+	
+	<h3>Inline quotation</h3>
+	<p class="in">And then he said <strong>&gt;&gt;</strong>We're waiting for Godot.<strong>&lt;&lt;</strong>.</p>
+	<p class="out">And then he said <q>We're waiting for Godot.</q>.</p>
+	
+	<p><em>Note:</em> Again, actual look may differ from site to site.</p>
+	
+	<!-- +cite?  -->
+	<!--
+	<p class="in"></p>
+	<p class="out"></p>
+	-->
+
+
+
+
+	<h2 id="source-codes">Source codes</h2>
+	
+	<h3>Inline code</h3>
+	<p class="in">Function <strong>`</strong>mitosis()<strong>`</strong> is little bit mystery to me.</p>
+	<p class="out">Function <code>mitosis()</code> is little bit mystery to me.</p>
+	
+	<h3>Block of general code</h3>
+	
+	<p class="in"><strong>/--code</strong>
+<br />until (death) {
+<br />&nbsp;&nbsp;&nbsp;&nbsp;do life();
+<br />}
+<br /><strong>\---</strong></p>
+	
+	<div class="out"><pre><code>until (death) {
+    do life();
+}</code></pre></div>
+
+	<h3>Block of code in specific language</h3>
+	<p>Marking out the language will enable syntax highlighting (if it's activated).</p>
+
+	<p class="in"><strong>/--code php</strong>
+<br />while ($marks_of_life) {
+<br />&nbsp;&nbsp;&nbsp;&nbsp;$marks_of_life = @life(); // @todo add resuscitation
+<br />}
+<br /><strong>\---</strong></p>
+
+	<div class="out"><pre class="php"><code><span class="php-keyword1">while</span> (<span class="php-var">$marks_of_life</span>) {
+    <span class="php-var">$marks_of_life</span> = @life(); <span class="php-comment">// @todo add resuscitation
+</span>}</code></pre></div>
+
+
+
+
+
+	<h2 id="extras">Extras</h2>
+	<p>You might also want to know...</p>
+	
+	<h3>New line</h3>
+	<p class="in">123 Palm Street<br /><strong>&nbsp;</strong>San José<br /><strong>&nbsp;</strong>Costa Rica</p>
+	
+	<h3>Horizontal line</h3>
+	<p>Also known as <em>thematic break</em>.</p>
+	
+	<p class="in">Paragraph before.
+<br />
+<br /><strong>--------------------</strong>
+<br />
+<br />Paragraph after.</p>
+	
+	<div class="out"><p>Paragraph before.</p>
+<hr />
+<p>Paragraph after.</p></div>
+
+
+
+	
+	<p id="epilogue">That's all. Want more details? See official <a href="http://texy.info">Texy manual</a>. &bull; <a href="#all">Go to the top &uarr;</a>.</p>
+	
+	</div><!-- /content -->
+
+</div><!-- /all -->
+</body>
+</html>
+<!--
+Originally made by: Peter Kahoun
+Last change: 14.2.2009 22:32:04
+-->
